@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    padding: 30px;
+    background-image: url('background.jpg'); /* Set a background image */
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: linear-gradient(to bottom right, #ffffff, #f1f1f1); /* Gradient background */
+}
+
+.form-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #333;
+}
+
+.upload-section input[type="file"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.upload-section input[type="file"]:hover {
+    border-color: #4e73df;
+}
+
+button {
+    background-color: #4e73df;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2e59d9;
+    transform: scale(1.05);
+}
+
+.live-button {
+    background-color: #28a745;
+    font-size: 1.3em;
+}
+
+.live-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

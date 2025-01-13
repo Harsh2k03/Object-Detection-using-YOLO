@@ -1,0 +1,9 @@
+Flask
+opencv-python
+ultralytics
+fer
+
+python -m venv myenv
+myenv\Scripts\activate
+pip install Flask opencv-python ultralytics fer moviepy
+python app.py
